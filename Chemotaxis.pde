@@ -1,6 +1,5 @@
 PImage mom;
 PImage chick;
-PFont font;
 int henX;
 int henY;
 Hen bob;
@@ -8,7 +7,6 @@ Chick[] sue;
 Car[] will;
 void setup()
 {
-  font = loadFont("HannotateTC-W7-48.vlw");
   frameRate(15);
   size(600,600); 
   bob = new Hen();
@@ -141,9 +139,9 @@ void dead()
   rect(0,0,600,600);
   
   fill(#2C0707);
-  textFont(font,58);
+  textSize(58);
   text("Oh no!", 200, 200);
-  textFont(font,40);
+  textSize(40);
   text("The chickens got hit :(", 100, 300);
 }
 void success()
@@ -153,7 +151,7 @@ void success()
   rect(0,0,600,600);
   
   fill(0);
-  textFont(font,30);
+  textSize(30);
   text("The chickens thank you for",100,300);
   text("helping them cross the road :)", 100, 400);
 }
