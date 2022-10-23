@@ -29,7 +29,7 @@ void draw()
 {
   background(#93D67F);
   fill(#AFADAA);
-  rect(-10,250,610,150);
+  rect(0,250,610,150);
   bob.walk();
   bob.show();
   for(int i = 0; i < sue.length; i++)
