@@ -79,7 +79,6 @@ class Hen
 
     if (mouseY - henY <= -10) 
       henY = henY + (int)(Math.random()*5)-25;
-      println(henX);
    }
     void show()
    {
